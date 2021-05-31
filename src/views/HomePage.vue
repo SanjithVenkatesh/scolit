@@ -1,23 +1,22 @@
 <template>
-<div>
+  <div>
     <h1>Scolit</h1>
-</div>
+    <CreateParty></CreateParty>
+  </div>
 </template>
 
 <script>
-// import AV from "leancloud-storage";
+import CreateParty from "../components/CreateParty.vue"
 export default {
   name: "HomePage",
   components: {
+      CreateParty,
   },
   data() {
-    return {
-    };
+    return {};
   },
-  created() {
-  },
-  methods: {
-  }
+  created() {},
+  methods: {}
 };
 </script>
 

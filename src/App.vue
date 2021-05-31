@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import getCredentials from "./main.js";
 export default {
   name: "App",
   data() {
@@ -17,15 +16,9 @@ export default {
     };
   },
   components: {},
-  methods: {},
+  methods: {
+  },
   created() {
-    const vm = this;
-    if (vm.credentials) {
-      console.log("in created(), have credentials");
-    } else {
-      console.log("in created(), getting credentials....");
-      vm.credentials = getCredentials();
-    }
   }
 };
 </script>

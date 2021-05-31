@@ -7,20 +7,20 @@ const routes = [
   {
     path: "/",
     components: {
-      basicWrapper: () => import("../components/TheBasicWrapper.vue"),
+      basicWrapper: () => import("../components/TheBasicWrapper.vue")
     },
     children: [
       {
         path: "/",
-        component: () => import("../views/HomePage.vue"),
-      },
-    ],
-  },
+        component: () => import("../views/HomePage.vue")
+      }
+    ]
+  }
 ];
 
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
-  routes,
+  routes
 });
 export default router;
